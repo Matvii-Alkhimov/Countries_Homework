@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "@parcel/config-default"
+  ],
+  "reporters": [
+    "...",
+    "parcel-reporter-clean-dist"
+  ],
+  "transformers": {
+    "*.handlebars": [
+      "parcel-transformer-hbs"
+    ]
+  }
+}
