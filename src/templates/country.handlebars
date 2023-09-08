@@ -1,0 +1,20 @@
+<h2 class="country-info__title">{{name.common}}</h2>
+<div class="country-info__cont">
+    <div class="country-info__data">
+        <p class="country-info__text">
+            Capital:
+            <span class="country-info__span">{{capital}}</span>
+        </p>
+        <p class="country-info__text">
+            Population:
+            <span class="country-info__span">{{population}}</span>
+        </p>
+        <ul class="country-info__languages">
+            <h3>Languages:</h3>
+            {{#each this.languages}}
+                <li class="country-info__language">{{language}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <img src="{{flags.svg}}" alt="country`s flag" class="country-info__picture">
+</div>
